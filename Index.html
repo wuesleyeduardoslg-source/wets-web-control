@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Controle W.E.T.S</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Controle W.E.T.S</h1>
+
+  <div class="botoes">
+    <button onclick="enviarComando('calculadora')">Calculadora</button>
+    <button onclick="enviarComando('musica')">Música</button>
+    <button onclick="enviarComando('D20')">D20</button>
+    <button onclick="enviarComando('notas')">Notas</button>
+    <button onclick="enviarComando('decodificador')">Decodificador</button>
+  </div>
+
+  <div class="texto">
+    <input type="text" id="txtComando" placeholder="Digite comando">
+    <button onclick="enviarTexto()">Enviar</button>
+  </div>
+
+  <div id="status">Status: Aguardando comando...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+  
